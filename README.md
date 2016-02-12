@@ -48,3 +48,11 @@ their prefixes removed.
 
 **This is the initial idea; it may change. Please leave suggestions if you think
 it should work a different way.**
+
+
+Etymology
+---------
+
+From the German *Aktenschrank*, meaning *filing cabinet*. `schrank` and `ak`
+were also considered as names, but were rejected, as `ak` feels too ambiguous,
+and `schrank` takes longer to type.
