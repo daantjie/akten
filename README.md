@@ -35,10 +35,7 @@ One should then be able to type `akten archive`, and have the following happen:
 │               └── owen.jpg
 └── work
     └── en
-        ├── 0211#exposure.pdf
-        ├── 0211#exposure.tex
         └── img
-            └── 0211#owen.jpg
 ```
 
 A child of `en/` has been created with the year (`16` for 2016) and the month
