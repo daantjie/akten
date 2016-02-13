@@ -59,3 +59,10 @@ if [ ! -f "$tex_source" ]; then
     echo -e "\n$tex_source does not exist!\n"
     exit 1
 fi
+
+mkdir -p "./$output_dir" ## Defaults to .temp
+## Build tex_source into output_dir
+eval "$compiler -output-directory ./$output_dir $tex_source"
+## Move the output PDF out of output_dir into current directory
+pdf_output="${tex_source%\.tex}.pdf"
+mv "./$output_dir/$pdf_output" .
