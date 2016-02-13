@@ -8,15 +8,13 @@ usage () {
 
 latex                    Compile to PDF as LaTeX source (default)
 t, tex                   Compile to PDF as TeX source
-q, quiet                 Suppress echo
-o=, output-dir=          Set output directory (defaults to .temp)       
+o=, output-dir=          Set output directory (defaults to .temp)
 
 "
 }
 
 ## Defaults
 compiler="pdflatex"
-quiet=
 output_dir=".temp"
 
 tex_source=
@@ -29,9 +27,6 @@ while [ $# != 0 ]; do
 	    ;;
 	-t|--tex)
 	    compiler="pdftex"
-	    ;;
-	-q|--quiet)
-	    quiet=1
 	    ;;
 	-o|--output-dir)
 	    shift
@@ -47,7 +42,7 @@ while [ $# != 0 ]; do
     esac
     shift
 done
-	    
+
 ## Assert tex_source is set
 if [ -z "$tex_source" ]; then
     echo -e "\nNo (La)TeX source file given!\n"
