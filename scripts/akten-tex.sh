@@ -6,10 +6,10 @@ usage () {
 
         akten-tex [options] [<.tex file>]
 
-latex           Compile to PDF as LaTeX source (default)
-t, tex       Compile to PDF as TeX source
-q, quiet        Suppress echo
-o=, output-dir=     Set output directory (defaults to .temp)       
+latex                    Compile to PDF as LaTeX source (default)
+t, tex                   Compile to PDF as TeX source
+q, quiet                 Suppress echo
+o=, output-dir=          Set output directory (defaults to .temp)       
 
 "
 }
