@@ -22,7 +22,7 @@ output_dir=".temp"
 tex_source=
 
 ## Parse arguments
-while test $# != 0; do
+while [ $# != 0 ]; do
     case "$1" in
 	--latex)
 	    compiler="pdflatex"
