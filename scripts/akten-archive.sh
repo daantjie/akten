@@ -18,6 +18,18 @@ config () {
     done
 }
 
+godfather () {
+    x=`pwd`
+    while [ "$x" != "/home/$(whoami)" ]; do
+	y=`find "$x" -maxdepth 1 -name .akten`
+	if [ -n "$y" ]; then
+	    echo $x
+	    return 1
+	fi
+	x=`dirname "$x"`
+    done
+}
+
 ## Defaults
 . `config`
 
