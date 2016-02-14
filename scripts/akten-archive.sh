@@ -10,8 +10,16 @@ wip
 "
 }
 
-## Defaults
+config () {
+    x=`pwd`
+    while [ "$x" != "/home/$(whoami)" ]; do
+	find "$x" -maxdepth 1 -name .akten
+	x=`dirname "$x"`
+    done
+}
 
+## Defaults
+. `config`
 
 ## Parse arguments
 while [ $# != 0 ]; do
