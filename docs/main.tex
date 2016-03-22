@@ -18,4 +18,30 @@
   \today}
 \end{titlepage}
 
+% Front matter
+\pagenumbering{roman}
+
+\section*{Abstract}
+\label{sec:Abstract}
+\addcontentsline{toc}{section}{Abstract}
+
+At the time of writing, the main purpose of this document is to allow myself
+(as I am currently the only developer) to think through exactly how \emph{akten}
+will work; in time, however, I hope that this will become a valuable resource
+to anyone wishing to use \emph{akten}.
+
+\begin{flushright}
+  \rule{1in}{0.4pt}\\
+  Daniel Oosthuizen, \today
+\end{flushright}
+
+% Contents
+\cleardoublepage
+\pagestyle{empty}
+\tableofcontents
+\cleardoublepage
+
+% Main matter
+\setcounter{page}{1}
+
 \end{document}
