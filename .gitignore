@@ -3,3 +3,6 @@
 nohup.out
 Thumbs.db
 temp-*
+*.aux
+*.log
+*.toc
